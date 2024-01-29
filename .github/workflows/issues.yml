@@ -1,0 +1,9 @@
+name: Issue details
+on: issues
+jobs:
+  test:
+    name: Print details
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo ${{ github.action.issue }}

@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print
-        run: echo ${{ github.action.issue }}
+        run: echo "${{ github.action.issue }}"
